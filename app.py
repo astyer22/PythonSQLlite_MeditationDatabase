@@ -10,7 +10,7 @@ def main():
     # Create a new session
     start_time = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
     end_time = (datetime.now() + timedelta(minutes=30)).strftime('%Y-%m-%d %H:%M:%S')
-    insert_session(start_time, end_time, 30, 'Morning meditation')
+    insert_session(start_time, end_time, 30, 'Gettting over wedding coldfeet .')
 
     # Retrieve and print all sessions
     sessions = get_sessions()
@@ -19,7 +19,7 @@ def main():
         print(session)
 
     # Create a new sound
-    insert_sound('Birdsong', 180, 'Nature')
+    insert_sound('Dealth of a Bachelor', 90, 'Panic at the disco')
 
     # Retrieve and print all sounds
     sounds = get_sounds()

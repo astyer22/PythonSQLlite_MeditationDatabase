@@ -44,13 +44,13 @@ def delete_session(session_id):
     conn.commit()
     conn.close()
 
-def insert_sound(name, duration_sounds, category):
+def insert_sound(name, duration_minutes, category):
     conn = connect_db()
     cursor = conn.cursor()
     cursor.execute("""
-    INSERT INTO Sounds (name, duration_seconds, category)
+    INSERT INTO Sounds (name, duration_minutes, category)
     VALUES (?, ?, ?)
-    """, (name, duration_sounds, category))
+    """, (name, duration_minutes, category))
     conn.commit()
     conn.close()
 
@@ -64,14 +64,14 @@ def get_sounds():
     conn.close()
     return sounds
 
-def update_sound(sound_id, name, duration_seconds, category):
+def update_sound(sound_id, name, duration_minutes, category):
     conn = connect_db()
     cursor = conn.cursor()
     cursor.execute("""
     UPDATE Sounds
-     SET name = ?, duration_seconds = ?, category = ?
+     SET name = ?, duration_minutes = ?, category = ?
     WHERE sound_id = ?
-    """, (name, duration_seconds, category, sound_id))
+    """, (name, duration_minutes, category, sound_id))
     conn.commit()
     conn.close()
 
