@@ -16,16 +16,12 @@ The programming language used for developing the meditation timer app was Python
 
 # Useful Websites
 
-{Make a list of websites that you found helpful in this project}
-
 - [wikipedia](https://en.wikipedia.org/wiki/Relational_database)
 - [SQLite Tutorial](https://www.sqlitetutorial.net/)
 - [Python](https://docs.python.org/3/library/sqlite3.html)
 - [tutorialspoint point](https://www.tutorialspoint.com/sqlite/sqlite_python.htm)
 
 # Future Work
-
-{Make a list of things that you need to fix, improve, and add in the future.}
 
 - Address any inconsistencies or errors in database operations.
 - Implement error handling and user feedback mechanisms.
